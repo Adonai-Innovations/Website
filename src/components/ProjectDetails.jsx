@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Contact from "./Contact";
 import AnimatedText from "./AnimatedText";
 import { FaReact } from "react-icons/fa";
-import {   SiShopify, SiSanity, SiAlgolia, SiFigma, SiNextdotjs, SiFirebase, SiSwift, SiKotlin, SiAndroid, SiOpenai, SiStripe, SiApple} from "react-icons/si";
+import { SiShopify, SiSanity, SiAlgolia, SiFigma, SiNextdotjs, SiFirebase, SiSwift, SiKotlin, SiAndroid, SiOpenai, SiStripe, SiApple } from "react-icons/si";
 import "./ProjectDetails.css";
 import image1 from "../assets/mockup-1.png";
 import image2 from "../assets/common-life.png";
@@ -18,8 +18,8 @@ const projectData = [
     id: 1,
     title: "Spend a Year With Jesus",
     description: [
-      "Spend a Year With Jesus is a native mobile app that showcases a walk-along journey through Jesus’s life before crucifixion. This was an end-to-end process for our client with development, design, and product managemnet involvement.",
-      "The clients mission is to connect people with Jesus’s experience to enhance their relationship with him, and in doing so affirm and strenghten experiences which build healthy relationships among all people of the world.",
+      "Spend a Year With Jesus is a native mobile app that showcases a walk-along journey through Jesus’s life before crucifixion. This was an end-to-end process for our client with development, design, and product management involvement.",
+      "The clients mission is to connect people with Jesus’s experience to enhance their relationship with him, and in doing so affirm and strengthen experiences which build healthy relationships among all people of the world.",
     ],
     image: image1,
     image2: before_after,
@@ -170,7 +170,7 @@ const getToolIcon = (tool) => {
       return <SiKotlin size={50} color="#0095D5" />;
     case "Jetpack Compose":
       return <SiAndroid size={50} color="#3DDC84" />;
-    
+
     case "Firebase Analytics":
       return <SiFirebase size={50} color="#FFCA28" />; // Firebase icon
     case "Open AI":
@@ -218,11 +218,10 @@ const ProjectDetails = () => {
 
       {/* Dynamic Services and Tools Section */}
       <div
-        className={`project-services-tools ${
-          !project.services || project.services.length === 0
-            ? "center-tools"
-            : ""
-        }`}
+        className={`project-services-tools ${!project.services || project.services.length === 0
+          ? "center-tools"
+          : ""
+          }`}
       >
         {project.services && project.services.length > 0 && (
           <div className="project-services-section">
