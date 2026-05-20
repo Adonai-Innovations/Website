@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Contact from "./Contact";
 import AnimatedText from "./AnimatedText";
 import { FaReact } from "react-icons/fa";
-import { SiShopify, SiSanity, SiAlgolia, SiFigma, SiNextdotjs, SiFirebase, SiSwift, SiKotlin, SiAndroid, SiOpenai, SiStripe, SiApple } from "react-icons/si";
+import { SiShopify, SiSanity, SiAlgolia, SiFigma, SiNextdotjs, SiFirebase, SiSwift, SiKotlin, SiAndroid, SiOpenai, SiStripe, SiApple, SiMongodb, SiNodedotjs, SiCss3, SiHtml5, SiJavascript } from "react-icons/si";
 import "./ProjectDetails.css";
 import image1 from "../assets/mockup-1.png";
 import image2 from "../assets/common-life.png";
@@ -12,6 +12,13 @@ import commonLife2 from "../assets/common-life2.png";
 import commonLife3 from "../assets/common-life3.png";
 import commonLifeRBG from "../assets/common-life-removebg.png";
 import before_after from "../assets/before-after.png";
+import txlcHeader from "/tx-laser-combat/txlc-header.png";
+import txlc1 from "/tx-laser-combat/txlc-1.png";
+import txlc2 from "/tx-laser-combat/txlc-2.png";
+import mmi from "/mmi/mmi-header.png";
+import mmi1 from "/mmi/mmi-1.png";
+import m2m1 from "/m2m/m2m-1.png";
+import m2m2 from "/m2m/m2m-2.png";
 
 const projectData = [
   {
@@ -36,20 +43,18 @@ const projectData = [
     services: [
       "Discovery",
       "Strategy",
-      "Product management",
-      "iOS  Development",
+      "Product Mangement",
+      "iOS Development",
       "Android Development",
       "UI/UX Design",
       "CI/CD Pipeline",
-      "Notifications",
+      "Notifications"
     ],
     tools: [
       "Figma",
-      "Firebase",
-      "Swift",
-      "SwiftUI",
-      "Kotlin",
-      "Jetpack Compose",
+      "MongoDB",
+      "React",
+      "Node.js",
     ],
   },
   {
@@ -96,54 +101,103 @@ const projectData = [
   },
   {
     id: 3,
-    title: "Tint Tek Plus Website & Chatbot",
-    description: "Placehodler",
-    image: image1,
-    image2: image1,
-    strategy: "Example product strategy for Project 3.",
-    design: "Example product design details for Project 3.",
+    title: "TX Laser Combat",
+    description: [
+      "Texas Laser Combat needed a digital experience that matched the energy of its in-person brand while also supporting day-to-day operations. We partnered with their team to design and build a custom website that better presents the business, highlights the experience, and gives customers a clearer view of what makes the venue unique. The public-facing site positions Texas Laser Combat as a high-adrenaline tactical laser tag destination in Plano, emphasizing immersive gameplay, modern equipment, and group experiences.",
+      "Beyond the website, we also built an internal employee app tailored to their operational needs. The app was created to help staff run safety briefings more consistently and provide a simple way to showcase laser tag weapons and equipment during onboarding and guest preparation. Together, the website and employee tool gave Texas Laser Combat a more cohesive digital presence across both customer experience and internal operations.",
+    ],
+    image: txlcHeader,
+    image2: txlc1,
+    image3: txlc2,
+    story: [
+      "The product design work started with creating a clear brand foundation for the business. We developed a brand guide that defined the company’s visual identity, including logo usage, color direction, and the core design elements needed to create a more cohesive and recognizable experience across digital touch points.",
+      "From there, we designed mockups for the full website experience in Figma, mapping out each page and reviewing the designs closely with the client before development began. This helped ensure alignment early in the process and gave the team confidence that the final product would reflect their vision. In addition to the website, we also designed a native iOS employee app to support internal operations, including safety brief workflows and equipment education for staff. The result was a connected design system spanning both the customer-facing brand and the internal tools used to run the business."
+    ],
     testimonial: {
       quote:
-        "Before hiring these developers, our website was held together with duct tape and good intentions. Now it’s so smooth, even our intern can’t break it (and trust me, they’ve tried). Highly recommend!",
-      author: "Alice Smith",
-      position: "Designer, Example Studio",
+        "In progress",
+      author: "Person",
+      position: "CTO, TX Laser Combat",
     },
     services: [
-      "Discovery",
-      "Strategy",
-      "Market analysis",
-      "Front-end engineering",
-      "UI/UX Design",
-      "Product management",
-      "Delivery management",
+      "Branding",
+      "Design",
+      "UX/UI",
+      "Front-end Engineering",
+      "Web Development"
     ],
-    tools: ["React", "Shopify", "Sanity", "Algolia", "Next.js", "Figma"],
+    tools: [
+      "Figma",
+      "MongoDB",
+      "React",
+      "Node.js",
+    ],
   },
   {
     id: 4,
-    title: "Made 2 Move Website",
-    description: "This is a placeholder project description for Project 4.",
-    image: image1,
-    image2: image1,
-    strategy: "Example product strategy for Project 4.",
-    design: "Example product design details for Project 4.",
+    title: "MMI Building Services",
+    description: [
+      "MMI Building Services needed a modern digital presence that could introduce the company clearly, communicate its range of services, and position the brand as a dependable construction partner across the Dallas/Fort Worth area. We partnered with their team to design and build a clean, professional website that presents MMI as a solutions-driven building services company focused on quality, communication, and long-term results. The site gives potential clients a simple way to understand who MMI is, what they offer, and how to start a project.",
+      "The website highlights MMI’s core service areas, including insurance restoration, home services, multifamily work, and commercial construction. It also establishes the company’s brand foundation through dedicated sections for their mission, values, background, and contact flow. The final experience gives MMI Building Services a polished public-facing platform that reflects their small-business accountability, construction expertise, and commitment to serving clients throughout the DFW Metroplex.",
+    ],
+    image: mmi,
+    image2: mmi1,
+    story: [
+      "The product design work started with creating a clear brand foundation for the business. We developed a brand guide that defined the company’s visual identity, including logo usage, color direction, and the core design elements needed to create a more cohesive and recognizable experience across digital touch points.",
+      "From there, we designed mockups for the full website experience in Figma, mapping out each page and reviewing the designs closely with the client before development began. This helped ensure alignment early in the process and gave the team confidence that the final product would reflect their vision. In addition to the website, we also designed a native iOS employee app to support internal operations, including safety brief workflows and equipment education for staff. The result was a connected design system spanning both the customer-facing brand and the internal tools used to run the business."
+    ],
     testimonial: {
       quote:
-        "Before hiring these developers, our website was held together with duct tape and good intentions. Now it’s so smooth, even our intern can’t break it (and trust me, they’ve tried). Highly recommend!",
-      author: "Bob Johnson",
-      position: "Product Manager, Example LLC",
+        `Working with this team to build our website was an outstanding experience from start to finish. Their professionalism was evident in every interaction—they were organized, responsive, and truly took pride in delivering high-quality work.
+        <br /> <br /> What stood out the most was their clear and consistent communication. We were kept informed throughout the entire process, with timelines, updates, and expectations always clearly outlined. Any questions or changes we had were handled quickly and thoroughly, which made the entire project feel seamless and stress-free.
+        <br /> <br />Most importantly, they didn’t take a one-size-fits-all approach. They took the time to understand our business, our goals, and our vision, and delivered a custom-built solution that fit our needs perfectly. The final product not only looks great but functions exactly how we envisioned.
+        <br /> <br />We couldn’t be happier with the result and would highly recommend them to anyone looking for a team that combines professionalism, transparency, and truly tailored solutions.`,
+      // author: "Person",
+      position: "CEO, MMI Building Services",
     },
     services: [
-      "Discovery",
-      "Strategy",
-      "Market analysis",
-      "Front-end engineering",
-      "UI/UX Design",
-      "Product management",
-      "Delivery management",
+      "Prototyping",
+      "Web Development"
     ],
-    tools: ["React", "Shopify", "Sanity", "Algolia", "Next.js", "Figma"],
+    tools: [
+      "React",
+      "CSS",
+      "HTML",
+      "Javascript",
+      "Node.js"
+    ],
   },
+  {
+    id: 5,
+    title: "Made 2 Move Sports Medicine Website",
+    description: [
+      "Made2Move Sports Medicine & Physical Therapy needed a digital presence that reflected both the credibility of its care and the flexibility of its service model. Serving the Dallas–Fort Worth area, the practice offers physical therapy, sports medicine, rehabilitation, performance support, and concierge care, so the website needed to clearly communicate a broader and more modern experience than a traditional clinic. We partnered with their team to design and build a custom website that introduces the business clearly, builds trust quickly, and helps potential clients understand the full scope of services.",
+      "The final website positions Made 2 Move as a professional, performance-focused brand while making it easier for visitors to learn about the practice, explore services, and take the next step. Through a clean structure, strong service organization, and a more polished visual presence, the site gives Made 2 Move a stronger public-facing platform that better reflects its expertise, personalized approach, and commitment to helping clients recover, move well, and perform at a high level.",
+    ],
+    image: m2m1,
+    image2: m2m2,
+    story: [
+      "The product design work started with creating a clear brand foundation for the business. We developed a brand guide that defined the company’s visual identity, including logo usage, color direction, and the core design elements needed to create a more cohesive and recognizable experience across digital touch points.",
+      "From there, we designed mockups for the full website experience in Figma, mapping out each page and reviewing the designs closely with the client before development began. This helped ensure alignment early in the process and gave the team confidence that the final product would reflect their vision. In addition to the website, we also designed a native iOS employee app to support internal operations, including safety brief workflows and equipment education for staff. The result was a connected design system spanning both the customer-facing brand and the internal tools used to run the business."
+    ],
+    testimonial: {
+      quote:
+        `Working with Adonai Innovations on my website was an outstanding experience from start to finish. They brought a high level of professionalism, clear communication, and a creative vision to the entire project. They took the time to truly understand our goals and translated them into a design that exceeded my expectations. Their attention to detail and ability to balance aesthetics with a focus on user experience really set them apart. Not only are they incredibly talented, but they were also reliable, responsive, and easy to collaborate with. The entire process was smooth and stress-free.
+        <br /> <br />I would absolutely recommend them to anyone looking for top-tier web design work. Their expertise and dedication made a real difference in bringing the Made2Move website to life.`,
+      position: "CEO, M2M Sports Medicine",
+    },
+    services: [
+      "Front End Web Development",
+    ],
+    tools: [
+      "React",
+      "CSS",
+      "HTML",
+      "Javascript",
+      "Node.js",
+      "Figma"
+    ],
+  }
 ];
 
 // Helper function for dynamic tool icons
@@ -172,16 +226,26 @@ const getToolIcon = (tool) => {
       return <SiAndroid size={50} color="#3DDC84" />;
 
     case "Firebase Analytics":
-      return <SiFirebase size={50} color="#FFCA28" />; // Firebase icon
+      return <SiFirebase size={50} color="#FFCA28" />;
     case "Open AI":
-      return <SiOpenai size={50} color="#000" />; // OpenAI official icon
+      return <SiOpenai size={50} color="#000" />;
     case "RevenueCat":
-      return <SiStripe size={50} color="#6772E5" />; // Using Stripe as similar
+      return <SiStripe size={50} color="#6772E5" />;
     case "Apple Search Ads":
-      return <SiApple size={50} color="#A2AAAD" />; // Apple logo
+      return <SiApple size={50} color="#A2AAAD" />;
 
+    case "MongoDB":
+      return <SiMongodb size={50} color="#47A248" />;
+    case "Node.js":
+      return <SiNodedotjs size={50} color="#339933" />;
+    case "CSS":
+      return <SiCss3 size={50} color="#1572B6" />;
+    case "HTML":
+      return <SiHtml5 size={50} color="#E34F26" />;
+    case "Javascript":
+      return <SiJavascript size={50} color="#F7DF1E" />;
     default:
-      return null; // Return null if no icon is available
+      return null;
   }
 };
 
@@ -203,17 +267,34 @@ const ProjectDetails = () => {
       </div>
 
       {/* Overview Section */}
-      <div className="project-overview-section">
-        <div className="project-overview-description">
-          {project.description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-        <img
-          src={project.image}
-          alt={project.title}
-          className="project-overview-images"
-        />
+      <div className={`project-overview-section ${(project.id === 3 || project.id === 4 || project.id === 5) ? "stacked-overview" : ""}`}>
+        {(project.id === 3 || project.id === 4 || project.id === 5) ? (
+          <>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-overview-images"
+            />
+            <div className="project-overview-description">
+              {project.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="project-overview-description">
+              {project.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-overview-images"
+            />
+          </>
+        )}
       </div>
 
       {/* Dynamic Services and Tools Section */}
@@ -261,11 +342,10 @@ const ProjectDetails = () => {
       )}
 
       {/* Our Story Section (Only for Project 2) */}
-      {/* Our Story Section (Only for Project 2) */}
-      {project.id === 2 && project.story && (
+      {(project.id === 2 || project.id === 3) && project.story && (
         <div className="our-story-section">
           <div className="our-story-container">
-            <h2 className="our-story-title">Our Story</h2>
+            {(project.id !== 3 && project.id !== 4) && <h2 className="our-story-title">Our Story</h2>}
             <div className="our-story-description">
               {project.story.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
@@ -285,7 +365,7 @@ const ProjectDetails = () => {
         </div>
       )} */}
 
-      {project.id === 2 && project.image2 && (
+      {(project.id === 2 || project.id === 3) && project.image3 && (
         <div>
           <img
             src={project.image3}
@@ -316,17 +396,20 @@ const ProjectDetails = () => {
       )} */}
 
       {/* Testimonial Section */}
-      {/* {project.testimonial && (
+      {(project.id === 4 || project.id === 5) && project.testimonial && (
         <div className="testimonial-section">
-          <div className="testimonial-content">
-            <p className="testimonial-quote">"{project.testimonial.quote}"</p>
-            <div className="testimonial-author">
-              <p className="author-name">{project.testimonial.author}</p>
-              <p className="author-title">{project.testimonial.position}</p>
+          <div className="testimonial-container">
+            <h2 className="testimonial-title">Testimonial</h2>
+            <div className="testimonial-description">
+              <p className="testimonial-quote" dangerouslySetInnerHTML={{ __html: `"${project.testimonial.quote}"` }}></p>
+              <div className="testimonial-author">
+                <p className="author-name">{project.testimonial.author}</p>
+                <p className="author-title">{project.testimonial.position}</p>
+              </div>
             </div>
           </div>
         </div>
-      )} */}
+      )}
       <AnimatedText />
       <Contact />
     </div>
